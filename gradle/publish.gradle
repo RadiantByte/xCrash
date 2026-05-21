@@ -1,5 +1,4 @@
 apply plugin: 'maven-publish'
-apply plugin: 'signing'
 
 ext["signing.keyId"] = ''
 ext["signing.password"] = ''
@@ -95,8 +94,4 @@ project.afterEvaluate {
             }
         }
     }
-}
-
-signing {
-    sign publishing.publications
 }
